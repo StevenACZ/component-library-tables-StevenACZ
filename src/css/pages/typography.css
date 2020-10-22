@@ -1,0 +1,16 @@
+/* Color container */
+.colors__container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 5px;
+}
+
+.colors__item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}

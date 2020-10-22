@@ -1,16 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Component Library - Flexbox</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Component Library</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
-
 <body>
-  <!--TODO-->
-  <!-- Table -->
-</body>
+  <header class="header">
+    <img class="header__img" src="./src/img/logo.png" alt="">
+  </header>
+  <main class="main">
 
+    <!-- Aside -->
+    <aside class="aside">
+      <a href="./index.html">
+        <span>Typography</span>
+        <img src="./src/img/icons/union-icon.png" alt="">
+      </a>
+      <a href="./elements.html">
+        <span>Elements</span>
+        <img src="./src/img/icons/union-icon.png" alt="">
+      </a>
+      <a class="active" href="./blocks.html">
+        <span>Blocks</span>
+        <img src="./src/img/icons/union-icon.png" alt="">
+      </a>
+    </aside>
+
+    <!-- Blocks -->
+    <section class="section">
+      <h2 class="title">Blocks</h2>
+
+      <!-- Banner -->
+      <section>
+        <p class="subtitle">Banner</p>
+
+        <section class="banner">
+          <div class="banner__hero">
+            <p class="banner__title">Full Stack Web Development</p>
+            <p class="banner__subtitle">
+              Become a better version of yourself in only 6 months.
+            </p>
+          </div>
+          
+          <button class="button button--success">Apply now</button>
+        </section>
+
+        <div class="editor">
+          <p class="code--green">&lt!-- Banner --></p>
+          <p> 
+            <span class="code--blue">&ltsection</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"banner"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"banner__hero"</span>  
+            <span class="code--blue">></span>  
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltp</span>
+            <span class="code--red">class=</span> 
+            <span class="code--orange">"banner__title"</span> 
+            <span class="code--blue">></span>
+            <span>Full Stack Web Development</span>
+            <span class="code--blue">&lt/p></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltp</span>
+            <span class="code--red">class=</span> 
+            <span class="code--orange">"banner__subtitle"</span> 
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBecome a better version of yourself in only 6 months.</span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/p></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltbutton</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"button button--success"</span>
+            <span class="code--blue">></span>  
+            <span>Apply now</span>
+            <span class="code--blue">&lt/button></span>  
+          </p>
+          <p>
+            <span class="code--blue">&lt/section></span> 
+          </p>
+        </div>
+      </section>
+
+      <!-- Tab Group -->
+      <section>
+        <p class="subtitle">Tab Group</p>
+
+        <ul class="list__tab-group">
+          <li class="item">Tab</li>
+          <li class="item">Tab</li>
+          <li class="item item--active">Active Tab</li>
+          <li class="item">Tab</li>
+          <li class="item">Tab</li>
+        </ul>
+
+        <div class="editor">
+          <p class="code--green">&lt!-- Tab Group --></p>
+          <p> 
+            <span class="code--blue">&ltul</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"list__tab-group"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p class="code--green">&nbsp&nbsp&lt!-- Default --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item"</span>
+            <span class="code--blue">></span>
+            <span>Tab</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <br>
+          <p class="code--green">&nbsp&nbsp&lt!-- Active --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item item--active"</span>
+            <span class="code--blue">></span>
+            <span>Active</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <br>
+          <p class="code--green">&nbsp&nbsp&lt!-- Default --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item"</span>
+            <span class="code--blue">></span>
+            <span>Tab</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <p>
+            <span class="code--blue">&lt/ul></span> 
+          </p>
+        </div>
+      </section>
+
+      <!-- Vertical List -->
+      <section>
+        <p class="subtitle">Vertical List</p>
+
+        <ul class="list__vertical">
+          <li class="item">Item</li>
+          <li class="item">Item</li>
+          <li class="item item--active">Item</li>
+          <li class="item">Item</li>
+          <li class="item">Item</li>
+        </ul>
+
+        <div class="editor">
+          <p class="code--green">&lt!-- Vertical List --></p>
+          <p> 
+            <span class="code--blue">&ltul</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"list__vertical"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p class="code--green">&nbsp&nbsp&lt!-- Default --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item"</span>
+            <span class="code--blue">></span>
+            <span>Item</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <br>
+          <p class="code--green">&nbsp&nbsp&lt!-- Active --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item item--active"</span>
+            <span class="code--blue">></span>
+            <span>Item</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <br>
+          <p class="code--green">&nbsp&nbsp&lt!-- Default --></p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltli</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"item"</span>
+            <span class="code--blue">></span>
+            <span>Item</span>
+            <span class="code--blue">&lt/li></span>
+          </p>
+          <p>
+            <span class="code--blue">&lt/ul></span> 
+          </p>
+        </div>
+      </section>
+
+      <!-- Card -->
+      <section>
+        <p class="subtitle">Card</p>
+
+        <div class="card">
+          <img class="card-img-top" src="./src/img/banner.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultrices erat, non accumsan ex. Suspendisse potenti. Aenean venenatis risus vitae arcu ultrices, id convallis turpis sodales.
+            </p>
+            <button class="button button--success">Button</button>
+          </div>
+        </div>
+
+        <div class="editor">
+          <p class="code--green">&lt!-- Card --></p>
+          <p> 
+            <span class="code--blue">&ltsection</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"card"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltimg</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"card-img-top"</span>
+            <span class="code--red">src=</span>
+            <span class="code--orange">"./src/img/banner.png"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"card-body"</span>  
+            <span class="code--blue">></span>  
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lth5</span>
+            <span class="code--red">class=</span> 
+            <span class="code--orange">"card-title"</span> 
+            <span class="code--blue">></span>
+            <span>Card title</span>
+            <span class="code--blue">&lt/h5></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltp</span>
+            <span class="code--red">class=</span> 
+            <span class="code--orange">"card-text"</span> 
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbspDescription...
+            </span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/p></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltbutton</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"button button--success"</span>
+            <span class="code--blue">></span>  
+            <span>Button</span>
+            <span class="code--blue">&lt/button></span>  
+          </p>
+          <p>
+            <span class="code--blue">&lt/section></span> 
+          </p>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section>
+        <p class="subtitle">Form</p>
+
+        <div class="flex flex-col update-profile">
+          <h2 class="mb-3">Update your profile</h2>
+          <div class="flex flex-col mb-3">
+            <label for="name"> <span class="text-red">*</span> Name</label>
+            <input type="text" class="mt-1" placeholder="Placeholder" id="name" required>
+          </div>
+          <div class="flex flex-col mb-3">
+            <label for="email"> <span class="text-red">*</span> Email</label>
+            <input type="text" class="mt-1" placeholder="Placeholder" id="email" required>
+          </div>
+          <p class="mb-3">Gender</p>
+          <div class="flex mb-3">
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <span>Female</span>
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <span>Male</span>
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <span>Other</span>
+            </label>
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-1" for="country">Country</label>
+            <select class="dropdown mb-3" id="country">
+              <option selected>Select a country</option>
+              <option>Perú</option>
+              <option>Chile</option>
+              <option>Bolivia</option>
+            </select>
+          </div>
+          <p class="mb-3">Favorite languages</p>
+          <div class="flex mb-3">
+            <label class="form-check">
+              <input type="checkbox">
+              <span>Ruby</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox">
+              <span>JS</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox">
+              <span>Python</span>
+            </label>
+          </div>
+          <div class="flex mt-3">
+            <button class="button button--primary mr-3">Submit</button>
+            <button class="button button--secundary ml-3">Cancel</button>
+          </div>
+        </div>
+
+        <div class="editor">
+          <p class="code--green">&lt!-- Form --></p>
+          <p> 
+            <span class="code--blue">&ltdiv</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"flex flex-col update-profile"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lth2</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mb-3"</span>
+            <span class="code--blue">></span>
+            <span>Update your profile</span>
+            <span class="code--blue">&lt/h2></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"flex flex-col mb-3"</span>  
+            <span class="code--blue">></span>  
+          </p>
+          <p>
+            <span class="code--blue">
+              &nbsp&nbsp&nbsp&nbsp&ltlabel
+            </span>
+            <span class="code--red">for=</span>
+            <span class="code--orange">"name"</span>
+            <span class="code--blue">></span>
+            <span class="code--blue">&ltspan</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"text-red"</span>
+            <span class="code--blue">></span>
+            <span>*</span>
+            <span class="code--blue">&lt/span></span>
+            <span>Name</span>
+            <span class="code--blue">&lt/label></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"text"</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mt-1"</span>
+            <span class="code--red">placeholder=</span>
+            <span class="code--orange">"Placeholder"</span>
+            <span class="code--red">id=</span>
+            <span class="code--orange">"name"</span>
+            <span class="code--blue">required></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>  
+            <span class="code--red">class=</span>  
+            <span class="code--orange">"flex flex-col mb-3"</span>  
+            <span class="code--blue">></span>  
+          </p>
+          <p>
+            <span class="code--blue">
+              &nbsp&nbsp&nbsp&nbsp&ltlabel
+            </span>
+            <span class="code--red">for=</span>
+            <span class="code--orange">"email"</span>
+            <span class="code--blue">></span>
+            <span class="code--blue">&ltspan</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"text-red"</span>
+            <span class="code--blue">></span>
+            <span>*</span>
+            <span class="code--blue">&lt/span></span>
+            <span>Email</span>
+            <span class="code--blue">&lt/label></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"text"</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mt-1"</span>
+            <span class="code--red">placeholder=</span>
+            <span class="code--orange">"Placeholder"</span>
+            <span class="code--red">id=</span>
+            <span class="code--orange">"email"</span>
+            <span class="code--blue">required></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltp</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mb-3"</span>
+            <span class="code--blue">></span>
+            <span>Gender</span>
+            <span class="code--blue">&lt/p></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"flex mb-3"</span>
+            <span class="code--blue">></span>
+          </p>
+
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-radio"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"radio"</span>
+            <span class="code--red">name=</span>
+            <span class="code--orange">"gender"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>Female</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-radio"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"radio"</span>
+            <span class="code--red">name=</span>
+            <span class="code--orange">"gender"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>Male</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-radio"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"radio"</span>
+            <span class="code--red">name=</span>
+            <span class="code--orange">"gender"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>Other</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"flex flex-col"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mb-1"</span>
+            <span class="code--red">for=</span>
+            <span class="code--orange">"country"</span>
+            <span class="code--blue">></span>
+            <span>Country</span>
+            <span class="code--blue">&lt/label></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltselect</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"dropdown mb-3"</span>
+            <span class="code--red">id=</span>
+            <span class="code--orange">"country"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption</span>
+            <span class="code--blue">selected></span>
+            <span>Select a country</span>
+            <span class="code--blue">&lt/option></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption></span>
+            <span>Perú</span>
+            <span class="code--blue">&lt/option></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption></span>
+            <span>Chile</span>
+            <span class="code--blue">&lt/option></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption></span>
+            <span>Bolivia</span>
+            <span class="code--blue">&lt/option></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/select></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltp</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"mb-3"</span>
+            <span class="code--blue">></span>
+            <span>Favorite languages</span>
+            <span class="code--blue">&lt/p></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"flex mb-3"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-check"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"checkbox"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>Ruby</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-check"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"checkbox"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>JS</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"form-check"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+            <span class="code--red">type=</span>
+            <span class="code--orange">"checkbox"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltspan></span>
+            <span>Python</span>
+            <span class="code--blue">&lt/span></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&lt/label></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <br>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&ltdiv</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"flex mt-3"</span>
+            <span class="code--blue">></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltbutton</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"button button--primary mr-3"</span>
+            <span class="code--blue">></span>
+            <span>Submit</span>
+            <span class="code--blue">&lt/button></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&nbsp&nbsp&ltbutton</span>
+            <span class="code--red">class=</span>
+            <span class="code--orange">"button button--secundary ml-3"</span>
+            <span class="code--blue">></span>
+            <span>Cancel</span>
+            <span class="code--blue">&lt/button></span>
+          </p>
+          <p>
+            <span class="code--blue">&nbsp&nbsp&lt/div></span>
+          </p>
+          <p>
+            <span class="code--blue">&lt/div></span> 
+          </p>
+        </div>
+      </section>
+    </section>
+  
+  </main>
+</body>
 </html>
