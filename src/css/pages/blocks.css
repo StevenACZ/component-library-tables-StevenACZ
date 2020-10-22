@@ -83,7 +83,7 @@
 .card-img-top {
   width: 100%;
   height: 200px;
-  background-size: cover;
+  object-fit: cover;
 }
 .card-body {
   padding: 16px;
